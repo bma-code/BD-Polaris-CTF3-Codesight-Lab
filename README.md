@@ -1,10 +1,10 @@
-# Black Duck Polaris - GitHub Action Lab (Lab #3)
+# Black Duck Polaris - Code Sight IDE (Lab #3)
 
-The goal of this lab is to provide hands on experience configuring a Polaris workflow in GitHub and viewing the results. As part of the lab, we will:
-- execute a full scan, viewing the results in the Polaris UI
-- break the build based on a policy defined in the Polaris UI
-- review the code scanning findings in the GitHub Advanced Security tab
-- introduce a vulnerable code change that adds a comment to the Pull Request
+The goal of this lab is to provide hands on experience configuring Visual Studio Code to work with Polaris and run a local scan in your IDE. In this lab you will learn how to:
+- install the Code Sight extension in Visual Studio Code
+- configure Code Sight extension to connect to your application in Polaris
+- scan your local application
+- fix a finding once its identified
 
 This repository contains everything you need to complete the lab except for the two prerequisites listed below.
 
@@ -40,50 +40,6 @@ analyze:
       enabled: true
 ```
 
-5. From the Polaris UI, [create an application](https://polaris.synopsys.com/developer/default/polaris-documentation/t_gs-app-superuser) and assign SAST and SCA subscriptions. Note: application name must match what is defined in the workflow, e.g. polaris-github-lab-java
-6. Create a new workflow. _GitHub → Project → Actions → New Workflow → Setup a workflow yourself_ **Milestone 2** :heavy_check_mark:
-
-```
-# example workflow for Polaris scans using the Synopsys Action
-# https://github.com/marketplace/actions/synopsys-action
-name: polaris
-on:
-  push:
-    branches: [ main, master, develop, stage, release ]
-  pull_request:
-    branches: [ main, master, develop, stage, release ]
-  workflow_dispatch:
-jobs:
-  polaris:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout Source
-      uses: actions/checkout@v4
-    - name: Setup Java JDK
-      uses: actions/setup-java@v4
-      with:
-        java-version: 17
-        distribution: microsoft
-        cache: maven
-    - name: Polaris Scan
-      uses: synopsys-sig/synopsys-action@v1.9.0
-      with:
-        polaris_server_url: ${{ vars.POLARIS_SERVERURL }}
-        polaris_access_token: ${{ secrets.POLARIS_ACCESSTOKEN }}
-        polaris_assessment_types: 'SAST,SCA'
-        polaris_application_name: ${{ github.event.repository.name }}
-        polaris_project_name: ${{ github.event.repository.name }}
-        polaris_prComment_enabled: 'true'
-        polaris_reports_sarif_create: 'true'
-        polaris_upload_sarif_report: 'true'
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-#    - name: Save Logs
-#      if: always()
-#      uses: actions/upload-artifact@v4
-#      with:
-#        name: bridge-logs
-#        path: ${{ github.workspace }}/.bridge
-```
 # Full Scan
 
 1. Monitor your workflow run and wait for scan to complete. _GitHub → Project → Actions → Polaris → Most recent workflow run → Polaris_
