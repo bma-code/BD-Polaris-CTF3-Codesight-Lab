@@ -1,4 +1,4 @@
-# Black Duck Polaris - GitHub Action Lab (Lab #4)
+# Black Duck Polaris - GitHub Action Lab (Lab #3)
 
 The goal of this lab is to provide hands on experience configuring a Polaris workflow in GitHub and viewing the results. As part of the lab, we will:
 - execute a full scan, viewing the results in the Polaris UI
