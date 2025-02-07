@@ -11,16 +11,17 @@ This repository contains everything you need to complete the lab except for the 
 
 ## Prerequisites
 
-1. [signup](https://github.com/signup) for a free GitHub Account
-2. [create](https://polaris.blackduck.com/developer/default/polaris-documentation/t_make-token) a Polaris Access Token
-3. [Microsoft Visual Studio Code](https://code.visualstudio.com/)
-4. Java JRE
-5. Maven
-6. ** Mac users need Xcode 
+- [signup](https://github.com/signup) for a free GitHub Account
+- [create](https://polaris.blackduck.com/developer/default/polaris-documentation/t_make-token) a Polaris Access Token
+- [Microsoft Visual Studio Code](https://code.visualstudio.com/)
+- Java JRE
+- Maven
+- ** Mac users need Xcode 
 
 
-# PREPAIRING VS CODE
+### PREPAIRING VS CODE
 
+**STEPS**
 1. If you do not already have [Microsoft Visual Studio Code](https://code.visualstudio.com/), download and install.
 2. Open Visual Studio Code and go to the extensions on left menu and search for Black Duck
 3. Find the Purple Black Duck logo and install the **<ins>Code Sight</ins>** extension.
