@@ -9,7 +9,7 @@ The goal of this lab is to provide hands on experience configuring Visual Studio
 
 This repository contains everything you need to complete the lab except for the two prerequisites listed below.
 
-## Prerequisites
+## $\textsf{\color{#800080}{Prerequisites}}$
 
 - [signup](https://github.com/signup) for a free GitHub Account
 - [create](https://polaris.blackduck.com/developer/default/polaris-documentation/t_make-token) a Polaris Access Token
@@ -19,19 +19,49 @@ This repository contains everything you need to complete the lab except for the 
 - ** Mac users need Xcode 
 
 
-### PREPAIRING VS CODE
-
-**STEPS**
-1. If you do not already have [Microsoft Visual Studio Code](https://code.visualstudio.com/), download and install.
+## PREPAIRING VS CODE
+![](https://img.shields.io/badge/steps-blueviolet?style=for-the-badge)
+1. If you do not already have [Microsoft Visual Studio Code](https://code.visualstudio.com/), download and install
 2. Open Visual Studio Code and go to the extensions on left menu and search for Black Duck
-3. Find the Purple Black Duck logo and install the **<ins>Code Sight</ins>** extension.
+3. Find the Purple Black Duck logo and install the **<ins>Code Sight</ins>** extension
 4. Mac Users - Type: [ CMD+SHIFT+P ] This will open a search where you can type shell and choose "Shell Command: Install 'code' command in PATH"
 5. Close Visual Studio Code
 
+
+## CONFIGURE CODE SIGHT
+![](https://img.shields.io/badge/steps-blueviolet?style=for-the-badge)
+1. Download a ZIP file of this lab from [GitHub](https://github.com/itsnotjason/polaris-codesight-lab) and extract to your local computer
+2. In your termainal navigate to the application folder (where the pom.xml file is) and Type: [ code . ] and hit enter
+3. VS Code should now appear, with your files from your folder loaded into the file explorer and a Code Sight window, "Choose a Product" should appear
+4. Under the Existing Polaris user? menu, choose "Connect to Polaris"
+5. Add your Polaris URL (if different than default)
+6. Add your Access Token (saved from Lab#2, or create a new one)
+7. Test Connection and Save Settings once successful
+8. Under the Status menu one the bottom left, click "Products and Licenses"
+9. We have installed connectivity to Polaris, but there are 2 ways to run scans. An scan as you code with Rapid Scan Static, and a full scan with Polaris. Click "Install" next to the "Code Analysis (Rapid Scan Stactic) under the Polaris option.
+
+
+## SCAN AS YOU CODE
+![](https://img.shields.io/badge/steps-blueviolet?style=for-the-badge)
+1. Under the Local View on the left menu, click the gear cog to open scan settings
+2. Click the [ + ] button to add scan types, and choose Polaris
+3. Use defaults, but change "Server Projects" and set to use the application you setup in Polaris during previous Labs and click Apply
+4. Click the [ + ] button once again and choose Rapid Scan Static and click Apply
+5. Under the Local View on the left menu, lets change this from Manual Scan to Automatic Scan
+6. In the File Explorer at the Top Left menu icon, open src/main/java > SqlInjection.java
+7. Click on your Code Sight extension, and click on the vulnerability
+8. Comment out the "Bad Code" and Uncomment out the "Fixed Code" and save your work.
+
+
+## FULL POLARIS SCAN
+![](https://img.shields.io/badge/steps-blueviolet?style=for-the-badge)
+1. Under the lcoal View on the left menu, lets change the Automatic Scan mode back to Manual Scan
+2. The Play or Run button should reappear, lets click this and choose Polaris from the options
+3. Once the scan is complete, and the results appear that will conclude Lab #3
+
 # Congratulations
 
-You have now configured a Polaris workflow in GitHub and demonstrated all the current post-scan CI features. :clap: :trophy:
+You have now scanned locally using Code Sight with Polaris! Keep in mind Code Sight works with Polaris, Black Duck SCA, Coverity, and Software Risk Manager as well! :clap: :trophy:
 
-# CTF (Optional)
-
-Capture the value from the secret and assemble a 3 part sentance in order. 
+## ![](https://img.shields.io/badge/optional-CTF-blueviolet?style=for-the-badge)
+Within the results in your IDE, find the secret and decode. Add this to your Lab 1, and Lab 2 findings to complete the sentence!
