@@ -14,9 +14,9 @@ This repository contains everything you need to complete the lab except for the 
 - [signup](https://github.com/signup) for a free GitHub Account
 - [create](https://polaris.blackduck.com/developer/default/polaris-documentation/t_make-token) a Polaris Access Token
 - [Microsoft Visual Studio Code](https://code.visualstudio.com/)
-- Java JRE
+- Java
 - Maven
-- ** Mac users need Xcode 
+- ** Mac users need Xcode (run 'xcodebuild -version' from commandline and if it fails you need to install xcode. If this still dosen't produce a version, run 'sudo xcode-select -r' from the command line and try again)
 
 
 ## PREPAIRING VS CODE
@@ -31,20 +31,20 @@ This repository contains everything you need to complete the lab except for the 
 ## CONFIGURE CODE SIGHT
 ![](https://img.shields.io/badge/steps-blueviolet?style=for-the-badge)
 1. Download a ZIP file of this lab from [GitHub](https://github.com/itsnotjason/polaris-codesight-lab) and extract to your local computer
-2. In your termainal navigate to the application folder (where the pom.xml file is) and Type: [ code . ] and hit enter
+2. From the command line navigate to the application folder (where the pom.xml file is) and Type: [ code . ] and hit enter
 3. VS Code should now appear, with your files from your folder loaded into the file explorer and a Code Sight window, "Choose a Product" should appear
 4. Under the Existing Polaris user? menu, choose "Connect to Polaris"
 5. Add your Polaris URL (if different than default)
 6. Add your Access Token (saved from Lab#2, or create a new one)
 7. Test Connection and Save Settings once successful
-8. Under the Status menu one the bottom left, click "Products and Licenses"
-9. We have installed connectivity to Polaris, but there are 2 ways to run scans. An scan as you code with Rapid Scan Static, and a full scan with Polaris. Click "Install" next to the "Code Analysis (Rapid Scan Stactic) under the Polaris option.
+8. Under the Status menu on the bottom left side, click "Products and Licenses"
+9. We have installed connectivity to Polaris, but there are 2 ways to run scans. You can scan as you code with Rapid Scan Static, and a full scan with Polaris. Click "Install" next to the "Code Analysis (Rapid Scan Stactic) under the Polaris option.
 
 
 ## SCAN AS YOU CODE
 ![](https://img.shields.io/badge/steps-blueviolet?style=for-the-badge)
 1. Under the Local View on the left menu, click the gear cog to open scan settings
-2. Click the [ + ] button to add scan types, and choose Polaris
+2. Click the [ + ] button to add scan types within the Code Sight Scan Configurations, and choose Polaris
 3. Use defaults, but change "Server Projects" and set to use the application you setup in Polaris during previous Labs and click Apply
 4. Click the [ + ] button once again and choose Rapid Scan Static and click Apply
 5. Under the Local View on the left menu, lets change this from Manual Scan to Automatic Scan
@@ -55,8 +55,8 @@ This repository contains everything you need to complete the lab except for the 
 
 ## FULL POLARIS SCAN
 ![](https://img.shields.io/badge/steps-blueviolet?style=for-the-badge)
-1. Under the lcoal View on the left menu, lets change the Automatic Scan mode back to Manual Scan
-2. The Play or Run button should reappear, lets click this and choose Polaris from the options
+1. Under the Local View on the left menu, lets change the Automatic Scan mode back to Manual Scan
+2. The Play or Run button located to the right of the Local View menu should reappear, lets click this and choose Polaris from the options
 3. Once the scan is complete, and the results appear that will conclude Lab #3
 
 # Congratulations
