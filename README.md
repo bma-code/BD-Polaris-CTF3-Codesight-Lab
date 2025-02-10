@@ -19,7 +19,7 @@ This repository contains everything you need to complete the lab except for the 
 - ** Mac users need Xcode (run 'xcodebuild -version' from commandline and if it fails you need to install xcode. If this still dosen't produce a version, run 'sudo xcode-select -r' from the command line and try again)
 
 
-## PREPAIRING VS CODE
+## PREPARING VS CODE
 ![](https://img.shields.io/badge/steps-blueviolet?style=for-the-badge)
 1. If you do not already have [Microsoft Visual Studio Code](https://code.visualstudio.com/), download and install
 2. Open Visual Studio Code and go to the extensions on left menu and search for Black Duck
