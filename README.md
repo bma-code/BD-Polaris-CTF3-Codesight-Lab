@@ -14,6 +14,8 @@ This repository contains everything you need to complete the lab except for the 
 - [signup](https://github.com/signup) for a free GitHub Account
 - [create](https://polaris.blackduck.com/developer/default/polaris-documentation/t_make-token) a Polaris Access Token
 - [Microsoft Visual Studio Code](https://code.visualstudio.com/)
+
+PART TWO: (Optional)
 - Java
 - Maven
 - ** Mac users need Xcode (run 'xcodebuild -version' from commandline and if it fails you need to install xcode. If this still dosen't produce a version, run 'sudo xcode-select -r' from the command line and try again)
@@ -38,26 +40,28 @@ This repository contains everything you need to complete the lab except for the 
 6. Add your Access Token (saved from Lab#2, or create a new one)
 7. Test Connection and Save Settings once successful
 8. Under the Status menu on the bottom left side, click "Products and Licenses"
-9. We have installed connectivity to Polaris, but there are 2 ways to run scans. You can scan as you code with Rapid Scan Static, and a full scan with Polaris. Click "Install" next to the "Code Analysis (Rapid Scan Stactic) under the Polaris option.
+9. We have installed connectivity to Polaris, but there are 2 ways to run scans from Visual Studio. You can scan as you code with Rapid Scan Static which we will do as part of this lab.  You can also run a full scan with Polaris which will be part 2, an optional addition to this lab. For now, Click "Install" next to the "Code Analysis (Rapid Scan Static) under the Polaris option.
 
 
 ## SCAN AS YOU CODE
 ![](https://img.shields.io/badge/steps-blueviolet?style=for-the-badge)
 1. Under the Local View on the left menu, click the gear cog to open scan settings
-2. Click the [ + ] button to add scan types within the Code Sight Scan Configurations, and choose Polaris
-3. Use defaults, but change "Server Projects" and set to use the application you setup in Polaris during previous Labs and click Apply
-4. Click the [ + ] button once again and choose Rapid Scan Static and click Apply
-5. Under the Local View on the left menu, lets change this from Manual Scan to Automatic Scan
-6. In the File Explorer at the Top Left menu icon, open src/main/java > SqlInjection.java
-7. Click on your Code Sight extension, and click on the vulnerability
-8. Comment out the "Bad Code" and Uncomment out the "Fixed Code" and save your work.
+2. Click the [ + ] button and choose Rapid Scan Static and click Apply
+3. Under the Local View on the left menu, lets change this from Manual Scan to Automatic Scan
+4. In the File Explorer at the Top Left menu icon, open src/main/java > SqlInjection.java
+5. Click on your Code Sight extension, and click on the vulnerability. A detailed explanation will appear with an explanation of what’s wrong and guidance on how to correct the issue.
+6. Comment out the "Bad Code" and Uncomment out the "Fixed Code" and save your work. See the vulnerability disappear.
+7. Open the HardCodedCredentials.java file and click back into the Code Sight extension.  Notice you have some vulnerabilities.  Find the “secret” token and complete part 1 of this lab.
 
 
+## PART TWO (OPTIONAL)
 ## FULL POLARIS SCAN
 ![](https://img.shields.io/badge/steps-blueviolet?style=for-the-badge)
 1. Under the Local View on the left menu, lets change the Automatic Scan mode back to Manual Scan
-2. The Play or Run button located to the right of the Local View menu should reappear, lets click this and choose Polaris from the options
-3. Once the scan is complete, and the results appear that will conclude Lab #3
+2. Click the [ + ] button to add scan types within the Code Sight Scan Configurations, and choose Polaris
+3. Use defaults, but change "Server Projects" and set to use the application you setup in Polaris during previous Labs and click Apply
+4. The Play or Run button located to the right of the Local View menu should reappear, lets click this and choose Polaris from the options
+5. Once the scan is complete, and the results will appear concluding how to run a full scan with Code Sight.
 
 # Congratulations
 
