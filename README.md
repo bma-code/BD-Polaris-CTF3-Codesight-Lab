@@ -55,7 +55,7 @@ PART TWO: (Optional)
 
 
 ## PART TWO (OPTIONAL)
-## FULL POLARIS SCAN
+### FULL POLARIS SCAN
 ![](https://img.shields.io/badge/steps-blueviolet?style=for-the-badge)
 1. Under the Local View on the left menu, lets change the Automatic Scan mode back to Manual Scan
 2. Click the [ + ] button to add scan types within the Code Sight Scan Configurations, and choose Polaris
