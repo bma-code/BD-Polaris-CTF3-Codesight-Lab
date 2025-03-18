@@ -45,9 +45,9 @@ PART TWO: (Optional)
 
 ## SCAN AS YOU CODE
 ![](https://img.shields.io/badge/steps-blueviolet?style=for-the-badge)
-1. Under the Local View on the left menu, click the gear cog to open scan settings
-2. Click the [ + ] button and choose Rapid Scan Static and click Apply
-3. Under the Local View on the left menu, lets change this from Manual Scan to Automatic Scan
+1. Under the Local View on the left menu, lets change this from Manual Scan to Automatic Scan
+2. Under the Local View on the left menu, click the gear cog to open scan settings
+3. Click the [ + ] button and choose Rapid Scan Static and click Apply
 4. In the File Explorer at the Top Left menu icon, open src/main/java > SqlInjection.java
 5. Click on your Code Sight extension, and click on the vulnerability. A detailed explanation will appear with an explanation of what’s wrong and guidance on how to correct the issue.
 6. Comment out the "Bad Code" and Uncomment out the "Fixed Code" and save your work. See the vulnerability disappear.
