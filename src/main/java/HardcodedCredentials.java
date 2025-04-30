@@ -12,7 +12,7 @@ public class HardcodedCredentials {
             /*password*/ "jenkins");
     }
     public static SecretKeySpec getKeySpec() throws UnsupportedEncodingException {
-        String secret = "QmxhY2sgRHVjayA6KQ==";
+        String secret = "bm90IHRoZSBjb3JyZWN0IHNlY3JldA==";
         SecretKeySpec keyspec = new SecretKeySpec(secret.getBytes("UTF-8"), "MD5");
         return(keyspec);
     }
