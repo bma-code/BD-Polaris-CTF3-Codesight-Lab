@@ -32,7 +32,7 @@ PART TWO: (Optional)
 
 ## CONFIGURE CODE SIGHT
 ![](https://img.shields.io/badge/steps-blueviolet?style=for-the-badge)
-1. Download a ZIP file of this lab from [GitHub](https://github.com/bma01810/BD-Polaris-CTF3-Codesight-Lab) and extract to your local computer
+1. Download a ZIP file of this lab from [GitHub](https://github.com/bma-code/BD-Polaris-CTF3-Codesight-Lab) and extract to your local computer
 2. From the command line navigate to the application folder (where the pom.xml file is) and Type: [ code . ] and hit enter
 3. VS Code should now appear, with your files from your folder loaded into the file explorer and a Code Sight window, "Choose a Product" should appear
 4. Under the Existing Polaris user? menu, choose "Connect to Polaris"
